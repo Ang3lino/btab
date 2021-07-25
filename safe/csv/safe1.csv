@@ -1,0 +1,340 @@
+questions,options,anwsers
+A scrum master notices that the team members are not open to showcasing their work. Which core value would the scrum master encourage the team to adopt,"
+
+Program execution
+Transparency
+Built-in quality
+Alignment ",Transparency.
+"A scrum master notices the team is often unable to support maintenance that arise on an ad hoc basis, even though it was agreed that team would provide this support. What could the scrum master do","
+
+Trust the team will move past the storming team formation stage and become better ad hoc support 
+
+Focus the team on production issues even if that means delaying the completion of their other commitments
+
+Encourage the team to defer the ad hoc issues to the next iteration
+
+Suggest the team leave some capacity available when planning the iteration ",Suggest the team leave some capacity available when planning the iteration
+A team regularly achieves 150% of its planned business value. How might the team adapt for the next PI,"
+
+Collaborate with other teams to teach them how to achieve high business value
+
+Determine ways to increase the ratio of committed PI Objectives to uncommitted objectives
+
+Plan 20% more story points in the next PI to match capacity to demand
+
+Adjust story sizing to reduce velocity ",Determine ways to increase the ratio of committed PI Objectives to uncommitted objectives
+"According to Tuckman's staegs of team dynamics, an agile team that ""respects each other's opinions and values thier differences"" is in which team development stage","
+
+Storming 
+Norming
+Forming 
+Performing ",Performing
+"At the end of the first Iteration, the team finishes User Stories A, B, and 50% of C. The Story sizes are set at these points:Story A = 8 pointsStory B = 1 pointStory C = 5 pointsStory D = 3 pointsWhat is the team's velocity","
+
+9
+7
+14
+11.5 ",9
+Cadence and synchronisation help reduce uncertainty and manage what,"
+Capacity allocation
+Other commitments
+The variability in solution development
+Product management ",The variability in solution development
+"During a retrospective, the team decides to delegate the responsibility of team to team communication to the scrum master. What are 2 significant risk this can introduce","
+
+The scrum master may forget to communicate from time to time
+
+The scrum master could misinterpret communications
+
+The scrum master becomes a bottleneck and slows down the flow of information.
+
+Team loses the opportunity to build relationship with the other team
+
+The team loses the opportunity to build T-shaped skills ","The scrum master becomes a bottleneck and slows down the flow of information.
+
+Team loses the opportunity to build relationship with the other team"
+"During Iteration planning, who defines the acceptance criteria for each story","
+
+The product Manager
+
+The scrum master 
+
+The product owner
+
+The Agile team ",The product owner
+"During the problem solving workshop, which step comes after identifying the biggest root-cause using Pareto analysis","
+
+Conduct the 5 whys
+
+Restate the new problem
+
+Brainstorm solutions
+
+Create improvement backlog items ",Restate the new problem
+How can Scrum master prepare for an Iteration Retrospective,"
+
+
+Define improvement stories for the team
+
+Collect updated Iteration metrics
+
+Identify the list of problems to address
+
+Determine which subject matter experts to invite ",Collect updated Iteration metrics
+"Lean flow, as defined as part of the SAFe CALMR approach, is supported by which SAFe principle","
+
+Build incrementally with fast, integrated learning cycles
+
+Visualize and limit WIP, reduce batch sizes and mange queue length
+
+Apply system thinking
+
+Organize around value ","Visualize and limit WIP, reduce batch sizes and mange queue length"
+"Scrum Master help remove impediments, foster an environment for high-performing team dynamics and what else","
+
+Lead team efforts in relentless improvement
+
+Form and re-form teams
+
+Continuously deliver value
+
+Estimate stories ",Lead team efforts in relentless improvement
+The scrum master is what above all else,"
+An event facilitator
+The iteration owner
+A team coach
+A servant leader ",A servant leader
+The scrum master notices the Agile team does not have cross-functional skills. What could the scrum master do to improve this situation,"
+
+Facilitate a personal development discussion with the team's manager
+
+Bring the issue to the team and ask for their suggestions
+
+Mandate pair programming across the team
+
+Create development plans for each of the team members ",Bring the issue to the team and ask for their suggestions
+"The team has struggled in this iteration to meet their goals, so they want to cancel the iteration review. Which risk is introduced by cancelling the iteration review","
+
+The team does not know when the prior iteration ends and the next iteration begins 
+
+The team cannot accept work as complete 
+
+The team cannot improve their internal processes
+
+The team is unable to incorporate feedback during the next iteration planning. ",The team is unable to incorporate feedback during the next iteration planning.
+What are two inputs of PI planning,"
+PI objectives 
+Team goals
+Story estimates
+vision
+Features ","Vision
+Features"
+What does an effective scrum master help the team with,"
+Risk mitigation
+Team metrics 
+Deploying work
+Relentless improvement ",Relentless improvement
+What foundational issue most often leads to team dysfunction,"
+Lack of commitment
+Weak Lean-Agile leadership
+Fear of conflict
+Absence of trust ",Absence of trust
+What is a characteristic of a SAFe Agile team,"
+
+Agile teams deliver value at the end of each PI
+
+The scrum master and product owner are part of the agile team
+
+Scrum masters write and accept stories
+
+Agile teams have between three and nine people ",The scrum master and Product owner are part of the Agile team
+What is an example of Scrum Master servant leader behaviour,"
+
+Strives to create a conflict-free environment
+
+Focuses on the day-to-day team activities
+
+Keeps their opinions to themselves
+
+Uses persuasion instead of authority ",Uses persuasion instead of authority
+What is considered an anti-pattern for the Iteration retrospective,"
+
+Adding improvement items to the team backlog
+
+Focusing on what to preserve as well as what to improve
+
+Choosing an action item for a another team
+
+Discussing Iteration metrics during the retrospective ",Choosing an action item for a another team
+What is one anti-pattern that can occur during the IP iteration,"
+
+The teams learn a new programming language 
+
+The teams build out their dev capabilities
+
+The teams integrate the whole system for the first time
+
+The teams prepare for I&A event ",The teams integrate the whole system for the first time
+What is one benefit of program increment objective,"
+
+They ensure accurate status reporting
+
+They create a near-term focus and vision
+
+They describe a process for defining team goals
+
+They form a guiding coalition ",They create a near-term focus and vision
+What is one characteristic of a powerful question,"
+
+It is closed-ended
+
+It moves someone in a pre-determined direction 
+
+It prompts reflective thinking
+
+It reinforces personal assumptions ",It prompts reflective thinking
+What is one characteristic of an Agile team's Iteration,"
+
+Are typically 8-12 weeks long
+
+The scrum master is responsible for approving the duration
+
+The duration can be extended to complete unfinished testing
+
+Scope changes should be minimized once it starts ",Scope changes should be minimized once it starts.
+What is one primary responsibility of a product owner,"
+
+To build , test and deliver stories
+
+To remove impediments and protect the team from outside 
+
+To attend the scrum of scrums meetings
+
+To act as the customer for developer questions ",To act at the customer for developer questions.
+What is one responsibility of a SAFe Scrum Master,"
+
+To enable the team to improve processes
+
+To plan the team's iteration
+
+To prevent the DSU from exceeding 15 mins 
+
+To ensure the team is fully utilized ",To enable team to improve processes
+What is the goal of the scrum of scrum event,"
+
+To review each team's progress on its stories
+
+To focus on ART process improvement
+
+To demo Features to Product management
+
+To review the ART's progress towards its PI objectives ",To review the ART's progress towards its PI objectives
+What is the primary goal of DevOps in SAFe,"
+
+Improve collaboration across the value stream
+
+Create a system team on the Agile Release Train
+
+Maximum stability of the solution in production
+
+Increase the speed of the development teams ",Improve collaboration across the value stream
+What is the primary purpose of the IP iteration,"
+
+Allows team members to take a vacation days without impacting the velocity
+
+Allocated time for integrating the work across the teams 
+
+Provide opportunity to identify more effective ways of working
+
+Reserve capacity for testing and bug fixes ",Provide opportunity to identify more effective ways of working
+What is the purpose of the Scrum of Scrums,"
+
+Allows LACE to oversee the teams
+
+Serves as the scrum master community of practice
+
+Updates status for stakeholders and management
+
+Provides visibility into dependencies and program impediments ",Provides visibility into dependencies and program impediments
+What is the role of the scrum master in the team backlog refinement process,"
+
+To make sure the acceptance criteria os clear
+
+To select the candidate stories for discussion
+
+To identify dependencies on other teams
+
+To ensure the team holds the event regularly ",To ensure the team holds the event regularly
+"When looking at a program board at the end of PI planning, what does it mean when a feature is placed in a team's swim lane with no strings","
+
+That the feature can be completed by that team independently
+
+That the team has not broken the feature into stories yet and has not identified dependencies
+
+That the team has been assigned, but the feature dependencies have not been identified yet
+
+That it has dependencies on teams in other Agile release trains (ARTs) or solution trains ",That the feature can be completed by that team independently.
+Which action demonstrates a Scrum Master's servant leadership,"
+
+Assigning work to individual team members
+
+Supporting healthy conflict during team meetings 
+
+Making decisions for the team during Iteration Planning
+
+Preparing everything for the team's Iteration review ",Supporting healthy conflict during team meetings
+Which Agile development concepts leads to faster delivery of business value,"
+
+Precise scope 
+Detailed timelines
+Continuous improvement 
+Clearly defined phases ",Continuous improvement
+Which statement is true about the team backlog,"
+
+It contains a list of items that will be implemented in the next iteration
+
+It represents the team's commitments
+
+Stories must be estimated before being added
+
+The Product owner is responsible for it. ",The Product owner is responsible for it.
+Which two activities could a scrum master and team focus on for the first team breakout session of PI planning,"
+
+Get business values assigned to PI objectives
+
+Begin identifying team dependencies
+
+Create the team's draft PI obj
+
+Identify and document team level risks
+
+Plan each iteration's details ","Create the team's draft PI obj
+Identify and document team level risks"
+Which two agile team events are designed to build and foster high-performing teams,"
+Retrospective
+Iteration Planning
+DSU
+System demo
+Iteration review ","Retrospective
+Iteration review"
+"While assigning business value, the business owner gives a value of two to a team PI objectives that they see as more technical in nature. This concerns the team due to the critical nature of the work. What is the best action for the Scrum master to take","
+
+Escalate to the release train engineer and product manager
+
+Challenge the business owner and ensure that a more higher 
+business value is assigned to the objective
+
+Facilitate an opportunity for a team to explain their 
+perspective of the business value delivered by the objective.
+
+Tell the team that business owners can provide any business value that they think is right. ","Facilitate an opportunity for a team to explain their 
+perspective of the business value delivered by the objective."
+Why does a scrum Master use the powerful questioning technique ,"
+
+To enforce the implementation of the right decision 
+
+To commit the team to deadlines
+
+To guide people to a solution
+
+To direct the team to specific outcomes ",To guide people to a solution
