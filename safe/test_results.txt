@@ -1,0 +1,93 @@
+Fail
+Question
+There are two key elements of a Lean-Agile Mindset: Lean thinking and what else?	Lean systems
+Question
+What are two critical areas that differentiate Agile from waterfall development? (Choose two.)	Incremental delivery of value;Face-to-face interaction;
+Question
+What is the recommended frequency for PI Planning in SAFe?	Every 4 to 6 weeks
+Question
+When does the Plan-Do-Check-Adjust cycle occur in Scrum?	As part of the Iteration retrospective
+Question
+What is the main reason why some teams never reach Stage 4 (Performing) in the stages of high performing teams?
+Question
+What is one example of a servant leader behavior pattern?	Uses authority rather than persuasion when necessary
+Question
+Becoming a coach requires a shift from old behaviors to new ones. What are three examples of old behaviors? (Choose three.)	Focusing on business value delivery;Asking the team for the answers;Facilitating team problem solving;
+Question
+The program board highlights Feature delivery dates, Milestones, and what else for teams on the Agile Release Train?	Objectives
+Question
+The business must depend on the team for what in order to do any meaningful planning?	Team capabilities
+Question
+What are two common PI Planning anti-patterns? (Choose two.)	Too much time is spent analyzing each Story;Too much time is spent prioritizing Features;
+Question
+During PI Planning, which two tasks are part of the Scrum Master's role in the first team breakout? (Choose two.)	Provide clarifications necessary to assist the team with their Story estimating and sequencing;Facilitate the coordination with other teams for dependencies;
+Question
+Which type of Enabler does a System Architect review during a System Demo?	Enabler Stories
+Question
+Who can change the backlog during an Iteration?	Scrum Master
+Question
+Who is responsible for prioritizing the Iteration backlog?	The Agile Team
+Question
+What is this statement describing?"Agile Teams continuously adapt to new circumstances and enhance the methods of value delivery."	Continuous Delivery
+Question
+Which three attributes summarize DevOps? (Choose three.)	Combined deployment and release;A mindset;A set of technical practices;
+Question
+What are two anti-patterns for the IP Iteration? (Choose two.)	To plan work for the IP Iteration during PI Planning;To ensure all Stories and teams' PI plans are completed prior to the IP Iteration;
+Question
+When is one time a Scrum Master may be a participant rather than a facilitator?	When the Agile Release Train does not require any team coordination
+
+Correct
+Question
+What are the three pillars of scrum?	Transparency, inspection, adaptation
+Question
+What is the recommended duration of an Iteration in SAFe?	Two weeks
+Question
+During PI Planning, who owns the planning of Stories into Iterations?	Agile Teams
+Question
+In SAFe, which activity is a Scrum Master's responsibility?	Coordinating with other teams
+Question
+What is one responsibility of a SAFe Scrum Master?	Facilitating an effective team breakout session during PI Planning
+Question
+Which meeting should the Scrum Master attend (not facilitate)?	Scrum of scrums
+Question
+The skills of a good Scrum Master include which three attributes?	Communicate, coordinate, cooperate
+Question
+An effective Scrum Master is a team-based servant leader who helps the team do what?	Embrace relentless improvement through Iteration retrospectives
+Question
+How does an effective Scrum Master help the team improve on their journey towards technical excellence?	By focusing on the importance of Built-in Quality
+Question
+Which statement is true about scrum?	It is a team-based framework
+Question
+Effective Scrum Masters apply which coaching behavior?	They encourage the team to learn from their mistakes
+Question
+What are two good Scrum Master facilitation practices? (Choose two.)	Ensure all voices are heard;Create an environment of safety so that everyone feels comfortable contributing to the discussion;
+Question
+Good coaches do not give people the answer, but instead they do what?	They guide people to the solution
+Question
+Which statement is true about teams?	Teams are more productive than the same number of individuals
+Question
+According to the Five Dysfunctions of a Team, what is a team's ultimate competitive advantage?	Teamwork
+Question
+What is the basis for most team conflicts?	Assumptions that have not been discussed
+Question
+Cadence and what other critical concept are the key constructs to delivering continuous value?	Synchronization
+Question
+Features lend themselves to the Lean UX process model. They include a description, a benefit hypothesis, and what else?	Acceptance criteria
+Question
+Participating in PI Planning enables teams to gain alignment and commitment around a clear set of what?	PI objectives
+Question
+Each PI Planning meeting evolves over time, and ending PI Planning with a retrospective will help to do what?	Continuously improve the event
+Question
+Who commits to the Iteration goals at the end of Iteration planning?	The team
+Question
+What is the name of the event where all team members determine how much of the team's backlog they can commit to delivering during an upcoming Iteration?	Iteration planning
+Question
+Why do teams have an Iteration retrospective?	To adjust and identify ways to improve
+Question
+What is the purpose of the Plan-Do-Check-Adjust cycle as applied to Iterations?	To provide a regular, predictable development cadence to produce an increment of value
+Question
+In SAFe, who owns the decision for releasing changes into production?	Product Management
+Question
+Which demo is performed in the IP Iteration?	The PI System Demo
+Question
+How are the 5 Whys used?	To identify a root cause(s) of a problem

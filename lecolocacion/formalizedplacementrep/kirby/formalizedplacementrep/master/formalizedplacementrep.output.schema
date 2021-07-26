@@ -1,0 +1,799 @@
+{
+  "namespace": "msan",
+  "name": "t_msan_formalized_placement_rep",
+  "doc": "Tabla que contiene el reporte de colocacion de formalizados con el detalle del credito.",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/msan/data/t_msan_formalized_placement_rep",
+  "partitions": ["load_date"],
+  "securityLevel": "L2",
+  "objectVersion": "1.0.0",
+  "type": "record",
+  "fields": [{
+    "name": "product_request_id",
+    "type": "int32",
+    "logicalFormat": "NUMERIC LARGE",
+    "deleted": false,
+    "metadata": false,
+    "default": 0
+  }, {
+    "name": "branch_division_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "state_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sap_agency_internal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_dealership_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_dealership_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(150)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "rfc_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_agency_brand_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(60)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "veh_suply_comm_alliance_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(100)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_brand_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_sub_brand_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_year_id",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "term_original_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "vehicle_real_interest_rate_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "leased_asset_residual_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "vehicle_circulation_sta_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "lse_vehicle_lic_prcd_sta_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_credit_agent_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(100)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cr_request_business_advisor_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agent_promoter_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cr_request_manager_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cr_request_manager_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "regional_manager_promotr_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(150)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "account_holder_rfc_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sap_customer_internal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "person_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "legal_representative_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(150)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "guarantor_customer_full_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(150)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "guartr_cust_lgl_resp_full_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(150)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "guarantor_customer_rfc_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "guarantor_customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bbva_customer_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_banking_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "preapproved_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "segment_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bbva_reference_cust_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_class_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_value_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "vehicle_accessories_vat_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "vehicle_damage_premium_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "leasing_first_pymt_vat_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_loan_init_pymt_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "asset_leasing_vat_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "asset_leasing_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "opening_fee_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "opening_fee_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "original_commission_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "sellr_agncy_cmsn_pmt_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_supplier_commission_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "veh_sale_agncy_vat_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_sale_agncy_pd_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "seller_commission_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "veh_seller_vat_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_seller_paid_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "non_bbva_customer_cmsn_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "non_bbva_cust_vat_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "non_bbva_customer_cmsn_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_supplier_manager_paid_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "association_insurance_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_company_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "damage_insrnc_net_premium_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "udis_to_pay_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "veh_credit_to_pay_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_cr_to_pay_vat_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_cr_sellr_to_pay_udis_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "veh_cr_seller_cmsn_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "vhcr_sellr_vat_com_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "vat_life_insurance_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "life_insurance_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "veh_cr_life_insurance_udis_per",
+    "type": ["null", "decimal(6,4)"],
+    "logicalFormat": "DECIMAL(6,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "6,4",
+    "locale": "mx"
+  }, {
+    "name": "vhcr_lf_insrc_vat_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "life_insurance_udis_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "cust_car_credit_granted_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "lse_term_end_cust_option_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_credit_quota_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "adms_fctry_cr_req_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "cust_credit_authorization_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "adms_fctry_req_reproc_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "cntl_desk_cr_req_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "credit_disburse_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "cntl_desk_req_reprocess_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "signing_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "auto_payment_entity_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "clabe_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "month_payment_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "vehicle_loan_fee_amount",
+    "type": ["null", "decimal(17,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "17,2",
+    "locale": "mx"
+  }, {
+    "name": "event_status_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(70)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_serial_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_engine_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pure_leasing_economic_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "overdue_event_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cust_case_file_pend_doc_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(250)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cutoff_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "load_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }]
+}

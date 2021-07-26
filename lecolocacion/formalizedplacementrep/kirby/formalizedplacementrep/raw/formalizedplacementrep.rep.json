@@ -1,0 +1,14 @@
+{
+    "_id" : "msan-mx-krb-inr-formalizedplacementrepr-01",
+    "description" : "Job msan-mx-krb-inr-formalizedplacementrepr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint}/spark-global-libs-release-local/com/datio/kirby/kirby-ingestion/${process.version}/kirby-ingestion-${process.version}-jar-with-dependencies.jar",
+        "configUrl" : "${repository.endpoint}/${repository.repo}/kirby/mx/msan/raw/formalizedplacementrep/${version}/formalizedplacementrep.rep.conf",
+        "mainClass" : "com.datio.kirby.Launcher",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "spark:2.2.1",
+    "size" : "S",
+    "streaming" : false
+}

@@ -1,0 +1,11 @@
+{
+    "_id" : "msan-mx-spk-qlt-formalizedplacementrepm-01",
+    "description" : "Job msan-mx-spk-qlt-formalizedplacementrepm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/mx/msan/master/formalizedplacementrep/${version}/formalizedplacementrep-01.conf"
+    },
+    "runtime" : "hammurabi",
+    "size" : "S",
+    "streaming" : false
+}

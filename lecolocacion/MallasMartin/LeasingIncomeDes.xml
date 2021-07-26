@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported at 19-07-2021 19:19:52-->
+<DEFTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Folder.xsd">
+    <FOLDER DATACENTER="Ctrlm_Desarrollo" VERSION="900" PLATFORM="UNIX" FOLDER_NAME="CR-MXDCODIA-T02G" REAL_FOLDER_ID="23210" TYPE="1">
+        <JOB JOBISN="7" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANVP0052" DESCRIPTION="Job Hammurabi Staging para el archivo t_sp_profit_YYYYMMDD.cvs" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%PARM1" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%A" VALUE="%%SUBSTR %%PARM1 1 4" />
+            <VARIABLE NAME="%%M" VALUE="%%SUBSTR %%PARM1 5 2" />
+            <VARIABLE NAME="%%D" VALUE="%%SUBSTR %%PARM1 7 2" />
+            <VARIABLE NAME="%%PARM2" VALUE="%%A-%%M-%%D" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-spk-qlt-leasingincomebases-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{&quot;params&quot;:[{&quot;SQLSERVER_DATE&quot;:&quot;%%PARM1&quot; , &quot;CUTOFF_DATE&quot;:&quot;%%PARM2&quot;,&quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;, &quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;} ]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MX2CRX_NUGJPISO00_TR" ODATE="ODAT" AND_OR="A" />
+            <QUANTITATIVE NAME="APX_DATIO_AI_MX" QUANT="1" ONFAIL="R" ONOK="R" />
+            <OUTCOND NAME="MX2CRX_NUGJPISO00_TR" ODATE="ODAT" SIGN="-" />
+            <OUTCOND NAME="MSANVP0052-TO-MSANCP0038" ODATE="ODAT" SIGN="+" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+        <JOB JOBISN="8" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANCP0038" DESCRIPTION="Job Ingesta Raw para t_le_leasing_income_base" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%PARM1" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%AA" VALUE="%%SUBSTR %%PARM1 1 4" />
+            <VARIABLE NAME="%%MM" VALUE="%%SUBSTR %%PARM1 5 2" />
+            <VARIABLE NAME="%%DD" VALUE="%%SUBSTR %%PARM1 7 2" />
+            <VARIABLE NAME="%%FechaL" VALUE="%%AA-%%MM-%%DD" />
+            <VARIABLE NAME="%%fechaSig" VALUE="%%$CALCDATE %%AA.%%MM.01 31" />
+            <VARIABLE NAME="%%mesSig" VALUE="%%SUBSTR %%fechaSig 1 6" />
+            <VARIABLE NAME="%%mesAct" VALUE="%%$CALCDATE %%mesSig.01 -1" />
+            <VARIABLE NAME="%%A" VALUE="%%SUBSTR %%mesAct 1 4" />
+            <VARIABLE NAME="%%M" VALUE="%%SUBSTR %%mesAct 5 2" />
+            <VARIABLE NAME="%%D" VALUE="%%SUBSTR %%mesAct 7 2" />
+            <VARIABLE NAME="%%PARM2" VALUE="%%A-%%M-%%D" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-krb-inr-leasingincomebaser-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{&quot;params&quot;: [{&quot;SQLSERVER_DATE&quot;:&quot;%%PARM1&quot; , &quot;CUTOFF_DATE&quot;:&quot;%%PARM2&quot;,&quot;LOAD_DATE&quot;:&quot;%%PARM2&quot;,&quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;, &quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;} ]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MSANVP0052-TO-MSANCP0038" ODATE="ODAT" AND_OR="A" />
+            <OUTCOND NAME="MSANVP0052-TO-MSANCP0038" ODATE="ODAT" SIGN="-" />
+            <OUTCOND NAME="MSANCP0038-TO-MSANVP0053" ODATE="ODAT" SIGN="+" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+        <JOB JOBISN="9" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANVP0053" DESCRIPTION="Job Hammurabi RAW t_le_leasing_income_base" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%PARM1" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%A" VALUE="%%SUBSTR %%PARM1 1 4" />
+            <VARIABLE NAME="%%M" VALUE="%%SUBSTR %%PARM1 5 2" />
+            <VARIABLE NAME="%%D" VALUE="%%SUBSTR %%PARM1 7 2" />
+            <VARIABLE NAME="%%PARM2" VALUE="%%A-%%M-%%D" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-spk-qlt-leasingincomebaser-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{&quot;params&quot;: [{&quot;SQLSERVER_DATE&quot;:&quot;%%PARM1&quot; , &quot;CUTOFF_DATE&quot;:&quot;%%PARM2&quot;,&quot;SUBSET_DATE&quot;:&quot;%%PARM2&quot;,&quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;, &quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;} ]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MSANCP0038-TO-MSANVP0053" ODATE="ODAT" AND_OR="A" />
+            <QUANTITATIVE NAME="APX_DATIO_AI_MX" QUANT="1" ONFAIL="R" ONOK="R" />
+            <OUTCOND NAME="MSANCP0038-TO-MSANVP0053" ODATE="ODAT" SIGN="-" />
+            <OUTCOND NAME="MSANVP0053-TO-MSANCP0039" ODATE="ODAT" SIGN="+" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+        <JOB JOBISN="10" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANCP0039" DESCRIPTION="Job Ingesta Master t_msan_leasing_income_base" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%PARM1" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%A" VALUE="%%SUBSTR %%PARM1 1 4" />
+            <VARIABLE NAME="%%M" VALUE="%%SUBSTR %%PARM1 5 2" />
+            <VARIABLE NAME="%%D" VALUE="%%SUBSTR %%PARM1 7 2" />
+            <VARIABLE NAME="%%PARM2" VALUE="%%A-%%M-%%D" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-krb-inm-leasingincomebaser-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{&quot;params&quot;: [{&quot;LOAD_DATE&quot;:&quot;%%PARM1&quot;,&quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;, &quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;} ]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MSANVP0053-TO-MSANCP0039" ODATE="ODAT" AND_OR="A" />
+            <QUANTITATIVE NAME="APX_DATIO_AI_MX" QUANT="1" ONFAIL="R" ONOK="R" />
+            <OUTCOND NAME="MSANVP0053-TO-MSANCP0039" ODATE="ODAT" SIGN="-" />
+            <OUTCOND NAME="MSANCP0039-TO-MSANVP0054" ODATE="ODAT" SIGN="+" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+        <JOB JOBISN="11" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANVP0054" DESCRIPTION="Job Hammurabi Master t_msan_leasing_income_base" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%PARM1" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%A" VALUE="%%SUBSTR %%PARM1 1 4" />
+            <VARIABLE NAME="%%M" VALUE="%%SUBSTR %%PARM1 5 2" />
+            <VARIABLE NAME="%%D" VALUE="%%SUBSTR %%PARM1 7 2" />
+            <VARIABLE NAME="%%PARM2" VALUE="%%A-%%M-%%D" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-spk-qlt-leasingincomebasem-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{&quot;params&quot;: [{&quot;HOST_DATE&quot;:&quot;%%PARM1&quot; , &quot;CUTOFF_DATE&quot;:&quot;%%PARM2&quot;,&quot;SUBSET_DATE&quot;:&quot;%%PARM2&quot;,&quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;, &quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;} ]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MSANCP0039-TO-MSANVP0054" ODATE="ODAT" AND_OR="A" />
+            <QUANTITATIVE NAME="APX_DATIO_AI_MX" QUANT="1" ONFAIL="R" ONOK="R" />
+            <OUTCOND NAME="MSANCP0039-TO-MSANVP0054" ODATE="ODAT" SIGN="-" />
+            <OUTCOND NAME="MSANVP0054-TO-MSANDP0035" ODATE="ODAT" SIGN="+" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+        <JOB JOBISN="12" APPLICATION="DMC-MX-DATIO" SUB_APPLICATION="TOTALES-TMP" JOBNAME="MSANDP0035" DESCRIPTION="Limpieza del archivo en staging de t_sp_profit_YYYYMMDD.cvs" CREATED_BY="XMX2250" RUN_AS="MX_DATIO_NS" CRITICAL="0" TASKTYPE="Job" CYCLIC="0" NODEID="lcvwtdaxai02" INTERVAL="00001M" CONFIRM="0" RETRO="0" MAXWAIT="3" MAXRERUN="0" AUTOARCH="1" MAXDAYS="0" MAXRUNS="0" WEEKDAYS="1,2,3,4,5" JAN="1" FEB="1" MAR="1" APR="1" MAY="1" JUN="1" JUL="1" AUG="1" SEP="1" OCT="1" NOV="1" DEC="1" DAYS_AND_OR="O" SHIFT="Ignore Job" SHIFTNUM="+00" SYSDB="1" IND_CYCLIC="S" CREATION_USER="XMX2250" CREATION_DATE="20210719" CREATION_TIME="185313" RULE_BASED_CALENDAR_RELATIONSHIP="O" APPL_TYPE="DATIONS" APPL_FORM="DATIONS" CM_VER="N/A" MULTY_AGENT="N" USE_INSTREAM_JCL="N" VERSION_SERIAL="1" CYCLIC_TOLERANCE="0" CYCLIC_TYPE="C" PARENT_FOLDER="CR-MXDCODIA-T02G">
+            <VARIABLE NAME="%%Fecha" VALUE="%%$ODATE" />
+            <VARIABLE NAME="%%File" VALUE="t_sp_profit_" />
+            <VARIABLE NAME="%%Path" VALUE="/in/staging/ratransmit/sqlserver/le/" />
+            <VARIABLE NAME="%%UCM-APP_NAME" VALUE="DATIONS" />
+            <VARIABLE NAME="%%UCM-JOBNAME" VALUE="msan-mx-dfs-rmv-hdfsdelete-01" />
+            <VARIABLE NAME="%%UCM-BODY" VALUE="{ &quot;params&quot;: [{  &quot;HADOOP_MODE&quot;: &quot;REMOVE&quot;,  &quot;HADOOP_PATH&quot;: &quot;%%Path.%%File.%%Fecha.*&quot;, &quot;CONTROLM_JOB_ID&quot;:&quot;%%JOBNAME&quot;,&quot;CONTROLM_JOB_FLOW&quot;:&quot;%%SCHEDTAB&quot;}]}" />
+            <VARIABLE NAME="%%UCM-NS" VALUE="mx.msan.app-id-22243.dev" />
+            <VARIABLE NAME="%%UCM-GROUP_ID" VALUE="processing" />
+            <VARIABLE NAME="%%UCM-ACCOUNT" VALUE="MX_DATIO_NS" />
+            <SHOUT WHEN="EXECTIME" TIME="&gt;015" URGENCY="R" DEST="EM" MESSAGE="Exceeded the execution time please alert the application" DAYSOFFSET="0" />
+            <SHOUT WHEN="LATESUB" TIME="2330" URGENCY="R" DEST="EM" MESSAGE="Debió ejecutar antes de las 23:00 hrs escalar al aplicativo" DAYSOFFSET="0" />
+            <INCOND NAME="MSANVP0054-TO-MSANDP0035" ODATE="ODAT" AND_OR="A" />
+            <QUANTITATIVE NAME="APX_DATIO_AI_MX" QUANT="1" ONFAIL="R" ONOK="R" />
+            <OUTCOND NAME="MSANVP0054-TO-MSANDP0035" ODATE="ODAT" SIGN="-" />
+            <ON STMT="*" CODE="NOTOK">
+                <DOMAIL URGENCY="R" DEST="martinisauro.mercado.contractor@bbva.com" SUBJECT="%%JOBNAME, NOT OK" ATTACH_SYSOUT="D" />
+            </ON>
+        </JOB>
+    </FOLDER>
+</DEFTABLE>

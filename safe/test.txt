@@ -1,0 +1,279 @@
+Good coaches do not give people the answer, but instead they do what?
+They hold them to their commitments
+They guide people to the solution
+They make the decisions
+They limit the number of questions
+
+During PI Planning, who owns the planning of Stories into Iterations?
+Scrum Master
+Agile Teams
+System Architect
+Product Management
+
+According to the Five Dysfunctions of a Team, what is a team's ultimate competitive advantage?
+Teamwork
+Transparency
+Accountability
+Commitment
+
+What are the three pillars of scrum?
+Adaptation, transparency, acceptance
+Transparency, inspection, adaptation
+Retrospection, inspection, adaptation
+Collaboration, acceptance, progress
+
+What is the purpose of the Plan-Do-Check-Adjust cycle as applied to Iterations?
+To allow the team to perform some final backlog refinement for upcoming Iteration planning
+To give the Agile Release Train team members a process tool to keep the train on the tracks
+To create a continuous flow of work to support the delivery pipeline
+To provide a regular, predictable development cadence to produce an increment of value
+
+In SAFe, which activity is a Scrum Master's responsibility?
+Coordinating with other teams
+Facilitating the Scrum of Scrums
+Owning the daily stand-up
+Prioritizing the Team Backlog
+
+Cadence and what other critical concept are the key constructs to delivering continuous value?
+Flexibility
+Synchronization
+Execution
+Refactoring
+
+What are two critical areas that differentiate Agile from waterfall development? (Choose two.)
+Fast feedback
+Staggered integration
+Face-to-face interaction
+Architectural Runway
+Incremental delivery of value
+
+During PI Planning, which two tasks are part of the Scrum Master's role in the first team breakout? (Choose two.)
+Manage the timebox
+Provide clarifications necessary to assist the team with their Story estimating and sequencing
+Facilitate the coordination with other teams for dependencies
+Be involved in the Program Backlog refinement and preparation
+Review and reprioritize the Team Backlog as part of the preparatory work for the second team breakout
+
+Participating in PI Planning enables teams to gain alignment and commitment around a clear set of what?
+Features and benefits
+PI objectives
+Team dependencies
+User Stories
+
+Which demo is performed in the IP Iteration?
+The integrated demo from the Agile Release Train's final Iteration
+The demo from the teams' final Iterations
+The PI System Demo
+The demo from all the Agile Release Trains' Iterations
+
+Which statement is true about teams?
+Changes in team composition do not impact productivity
+Teams are more productive than the same number of individuals
+Agile Teams can manage daily interruptions
+Products are more robust when individuals on teams have specific skill sets
+
+Which statement is true about scrum?
+It is a Lean System Engineering technique
+It is a set of technical software practices
+It is a team-based framework
+It is an ideal method for static design requirements
+
+Who can change the backlog during an Iteration?
+Senior management
+Release Train Engineer
+Agile Team
+Scrum Master
+
+What is the basis for most team conflicts?
+Assumptions that have not been discussed
+Ideological differences
+Lack of leadership
+Cultural differences
+
+Which meeting should the Scrum Master attend (not facilitate)?
+Daily stand-up
+Scrum of scrums
+Iteration review
+PO sync
+
+Effective Scrum Masters apply which coaching behavior?
+They drive the team toward specific outcomes
+They act as a subject matter expert
+They encourage the team to learn from their mistakes
+They coordinate individual contributions
+
+What is one example of a servant leader behavior pattern?
+Focuses on individual task Metrics
+Thinks about the day-to-day activities
+Uses authority rather than persuasion when necessary
+Understands and empathizes with others
+
+What is this statement describing?"Agile Teams continuously adapt to new circumstances and enhance the methods of value delivery."
+Continuous Delivery
+Continuous Improvement
+Continuous Integration
+Continuous Deployment
+
+Becoming a coach requires a shift from old behaviors to new ones. What are three examples of old behaviors? (Choose three.)
+Driving toward specific outcomes
+Fixing problems for the team
+Focusing on deadlines
+Focusing on business value delivery
+Asking the team for the answers
+Facilitating team problem solving
+
+Each PI Planning meeting evolves over time, and ending PI Planning with a retrospective will help to do what?
+Continuously improve the event
+Lengthen the Architectural Runway
+Fine tune the economic framework
+Meet compliance more rapidly
+
+What is one responsibility of a SAFe Scrum Master?
+Running system and solution demos
+Estimating the size and complexity of the work
+Facilitating an effective team breakout session during PI Planning
+Developing and communicating the program vision and roadmap
+
+The program board highlights Feature delivery dates, Milestones, and what else for teams on the Agile Release Train?
+Objectives
+Requirements
+Dependencies
+Timeboxes
+
+In SAFe, who owns the decision for releasing changes into production?
+Product Management
+Release Train Engineer
+Solution Owner
+System Architect
+
+When is one time a Scrum Master may be a participant rather than a facilitator?
+When the Agile Release Train does not require any team coordination
+If the entire team is present during the daily stand-up
+When using ad hoc teams for Inspect and Adapt
+During team breakout sessions at PI Planning
+
+How does an effective Scrum Master help the team improve on their journey towards technical excellence?
+By focusing on the importance of Built-in Quality
+By mandating pair work
+By allowing defects to be resolved in the IP Iteration
+By setting clear time boxes for Iteration planning
+
+Features lend themselves to the Lean UX process model. They include a description, a benefit hypothesis, and what else?
+Content readiness
+Acceptance criteria
+Scope and context
+Business outcomes
+
+What are two good Scrum Master facilitation practices? (Choose two.)
+Allow for unproductive conflict to encourage open communication
+Create an environment of safety so that everyone feels comfortable contributing to the discussion
+Ensure all voices are heard
+Do not enforce accountability as it creates an environment of distrust
+Allow for deep, meaningful conversations even if it is outside the scope of the agenda
+
+Why do teams have an Iteration retrospective?
+To identify acceptance criteria
+To evaluate Metrics
+To iterate on Stories
+To adjust and identify ways to improve
+
+The business must depend on the team for what in order to do any meaningful planning?
+A cross-functional skill set
+Measurements
+Team capabilities
+Commitment to the plan
+
+What is the main reason why some teams never reach Stage 4 (Performing) in the stages of high performing teams?
+Because the team is not structured correctly
+Because there are conflicts
+Because leadership is spontaneous
+Because no one guides them
+
+An effective Scrum Master is a team-based servant leader who helps the team do what?
+Manage the team's own backlog
+Understand and operate within Lean Budgets
+Embrace relentless improvement through Iteration retrospectives
+Develop better and more specialized skill sets
+
+What are two common PI Planning anti-patterns? (Choose two.)
+Scrum Masters who work with multiple teams do not have time for their teams
+Too much time is spent analyzing each Story
+Too much time is spent prioritizing Features
+Stories are created for the Iterations
+The team decides which changes need to happen and when
+
+Who is responsible for prioritizing the Iteration backlog?
+The Product Owner
+The Agile Team
+The Product Management Team
+The Scrum Master
+
+The skills of a good Scrum Master include which three attributes?
+Self-organize, self-manage, self-direct
+Represent, direct, govern
+Communicate, coordinate, cooperate
+Share, pair, communicate
+
+When does the Plan-Do-Check-Adjust cycle occur in Scrum?
+At the Iteration review
+Across all scrum events
+In the daily stand-up
+As part of the Iteration retrospective
+
+There are two key elements of a Lean-Agile Mindset: Lean thinking and what else?
+Systems Engineering
+Embracing Agility
+Feature enablement
+Lean systems
+
+What is the recommended frequency for PI Planning in SAFe?
+Every 6 to 8 weeks
+Every 4 to 6 weeks
+Every 8 to 12 weeks
+Every 12 to 16 weeks
+
+How are the 5 Whys used?
+To brainstorm ideas
+To identify a root cause(s) of a problem
+To define acceptance criteria for a Story
+To coach a team through powerful questions
+
+What is the name of the event where all team members determine how much of the team's backlog they can commit to delivering during an upcoming Iteration?
+Solution Demo
+Backlog refinement
+Solution planning
+Iteration planning
+
+Which type of Enabler does a System Architect review during a System Demo?
+Enabler Stories
+Enabler Features
+Enabler Capabilities
+Enabler Epics
+
+Which three attributes summarize DevOps? (Choose three.)
+A high performing DevOps team
+Strong organizational structure
+A mindset
+A set of technical practices
+Combined deployment and release
+A culture
+
+Who commits to the Iteration goals at the end of Iteration planning?
+The Solution Owner
+The Product Owner
+The Scrum Master
+The team
+
+What is the recommended duration of an Iteration in SAFe?
+Six weeks
+Three weeks
+Four weeks
+Two weeks
+
+What are two anti-patterns for the IP Iteration? (Choose two.)
+To minimize lost capacity when people are on vacation or holidays
+To plan work for the IP Iteration during PI Planning
+To allow for sufficient capacity in the Program Roadmap
+To ensure all Stories and teams' PI plans are completed prior to the IP Iteration
+To wait for the IP Iteration to fix defects
+

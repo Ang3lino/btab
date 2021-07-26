@@ -1,0 +1,248 @@
+How does the Scrum Master provide the most value to the team?
+
+-by facilitation discussion between the product owner and the development team
+-by ensuring time boxes are kept during team meetings and working sessions
+-by scheduling scrum supported events to ensure team alignment
+-by ensuring impediments are removed for the development team |-by ensuring impediments are removed for the development team;What are two common anti-patterns during PI planning? (choose 2)
+
+-Alignment becomes the goal, rather than a detailed plan
+-pressure is put on teams to overcommit
+-a detailed plan becomes the goal rather than alignment
+-the team determines where change should be targeted
+-the team backlog is applied to a very targeted part of the organization |-pressure is put on teams to overcommit
+-a detailed plan becomes the goal rather than alignment;which two actions are part of the scrum master's role in PI planning?
+
+-align the value stream and agile release trains to a common vision
+-serve as the customer proxy and work with product management
+-manage the program board
+-ensure the team builds a plan they can commit to
+-prioritize features to support the program vision |-align the value stream and agile release trains to a common vision
+-ensure the team builds a plan they can commit to;what are two safe opportunities for driving relentless improvement?
+
+-iteration retrospective
+-PI planning management review and problem solving
+-daily standup
+-PI planning
+-inspect and adapt workshop |-iteration retrospective
+-inspect and adapt workshop;what is one of the scrum master's responsibilities during the IP iteration?
+
+-update the team's PI roadmap
+-create the team's PI predictability report
+-remove the scope that exceeds capacity
+-update capacity |-remove the scope that exceeds capacity;what is accomplished in the first part of the PI planning meeting?
+-the scrum master decides how much work can be accomplished
+-items are selected from the program backlog
+-all tasks are defined
+-the product owner defined the iteration goal |-the product owner defined the iteration goal;the scrum master role includes traditional scrum team leadership and responsibilities to which other group?
+
+-the the value stream engineers
+-to the agile teams at the program level
+- to the business owners
+-to the teams that make up the lean portfolio |-to the agile teams at the program level;at the end of the first iteration the team finishes user stories A, B, and 50% of C. The story sizes are set at these points:
+Story A= 8 points
+Story B= 1 point
+Story C= 5 points
+Story D= 3 points
+What is the team's velocity?
+
+-7
+-14
+-11.5
+-9 |-11.5;How often should a system demo occur?
+
+-after every iteration
+-after every release
+-every week
+-every PI |-every PI;what are two outputs of iteration planning? (choose 2)
+
+-team backlog
+-iteration goals
+-program backlog
+-iteration backlog
+-PI objectives |-iteration backlog
+-iteration goals;what is a common reason why a team is unable to estimate a story?
+
+-Developers do not understand the task related to the story
+-the story does not include a role
+-the team has no experience in estimating
+-the story lacks acceptance criteria |- the story lacks acceptance criteria;what foundational issue most often leads to team dysfunction?
+
+-lack of commitment
+-avoidance of accountability
+-weak lean-agile leadership
+-absence of trust |-absence of trust;what is a characteristic of an effective scrum master?
+
+-provides status
+-is a technical expert
+-supports the autonomy of the team
+-understands the customer needs |-supports the autonomy of the team;why is it important for the scrum master to help the team focus on daily and iteration goals?
+
+- to eliminate impediments 
+-to facilitate the team's progress towards goals of current PI Objectives
+-the keep the team backlog to a manageable size
+-to help the team maintain their velocity |-to facilitate the team's progress towards goals of current PI Objectives;What does SAFe's CALMR approach apply to?
+
+-continuous deployments
+-dev ops
+-servant leadership
+-economic framework |-dev ops;what is the purpose of the iterations and program increments?
+
+-to provide fast feedback learning cycles and frequent integration
+-to provide an architectural basis for future development
+-to provide fixed dates for delivery
+-to demonstrate the increment to stakeholders |-to provide fast feedback learning cycles and frequent integration;what is the key scrum master responsibility when estimating stories?
+
+-ensure the team gives estimates that do not increase the velocity
+-provide information about customer needs
+-limit discussion to minimize timeboxes
+-ensure everyone on the team participates |-ensure everyone on the team participates;an effective SAFe scrum master helps the team improve in areas including quality, predictability, flow and where else?
+
+-continuous delivery
+-relentless improvement
+-risk mitigation
+-team metrics |-team metrics;when looking at a program board, what does it mean when a feature is placed in a team's swim lane with no strings?
+
+-the team has not broken the feature into stories yet and has not identified dependencies
+-the team has been assigned but the feature dependencies have not yet been identified
+-that is has dependencies on teams in other agile release trains or solutions trains
+-that the feature can be completed independent from other teams |-that the feature can be completed independent from other teams;which activity is the scrum master's responsibility?
+
+-facilitating scrum of scrums
+-owning the daily stand up
+-coaching the agile team
+-prioritizing the team backlog |-coaching the agile team;what falls outside the scrum master's responsibility?
+
+-facilitating backlog refinement
+-coaching the team
+-estimating stories for the team
+-facilitating the innovation and planning event
+-assigning stories to team members |-coaching the team
+-estimating stories for the team;why is it important for a scrum to be a servant leader?
+
+-to provide team structure
+-to help the team become high-performing
+-to coach the team in effective engineering practices
+-to drive the team to succeed |-to help the team become high-performing;what is an example of SAfe scrum master servant leader behavior?
+
+-uses persuasion instead of authority
+-strives to create a conflict-free environment
+-focuses on the day to day team activities
+-facilitates the major events and processes |-uses persuasion instead of authority;the scrum master is what above all else?
+
+- a SAFe Agilist
+-the iteration owner
+-a team coach
+-a servant leader |-a servant leader;which two behaviors should a SAFe Scrum Master represent as a coach?(choose 2)
+
+-be a facilitator
+-drive toward specific outcomes
+-provide subject matter expertise
+-focus on deadlines and technical options
+-help the team find their own way |-be a facilitator
+-help the team find their own way;PI objectives summarize data into meaningful information that enhances alignment and provides what outcomes?
+
+-a guiding coalition
+-accurate status reporting
+-a process for defining team goals
+-visibility for all |-visibility for all;when is iteration planning completed?
+
+-when the timebox is complete
+-when the scrum master commits
+-when the product owner commits
+-when the team commits |-when the team commits;hoe does SAFe handle the 'fear of conflict' team dysfunction?
+
+-empirically review results at the end of every iteration and release
+-use scrum to create a safe environment for conflict
+-review results to drive accountability
+-have teams engage in retrospectives |-use scrum to create a safe environment for conflict;what does transparency mean in a scrum environment?
+
+-the process is visible to all stakeholders
+-team members must immediately share any and all feedback with each other
+-the team is constantly improving its process
+-development and operations teams work together |-the process is visible to all stakeholders;how can a scrum master support a problem solving workshop?
+
+-by coaching the release train engineer on managing the event
+-by providing facilitation to breakout groups focused on specific problems
+- by estimating the work effort required to implement recommended improvements
+-by acting as a process coach to the teams and providing the right answers |-by providing facilitation to breakout groups focused on specific problems;an effective scrum master elevates people problems with strict confidence to the appropriate levels when necessary, but only after what has happened?
+
+-a team member consistently disagrees with the scrum master
+-they have repeatedly directed the team member to take appropriate action
+-coaching and internal processes have failed to achieve the objective
+-the team consistently fails to meet consecutive PI goals |-coaching and internal processes have failed to achieve the objective;when is a feature hypothesis fully evaluated?
+
+-when the feature has been deployed to production
+-when the feature is accepted by the product manager
+-when the customer uses the feature in production
+-when the feature's return on investment has been realized |-when the feature has been deployed to production;when working with an agile team, what is expected from product management?
+
+-to define the software technical specifications
+-to clarify the scope of feature work
+-to coach the team on agile practices
+-the provide iteration vision to the team |-to clarify the scope of feature work;which team dysfunction does SAFe help address with the help of stakeholders?
+
+-avoidance of accountability
+-lack of visibility
+-missed time boxes
+-lack of transparency |-lack of transparency;which agile manifesto principle describes the importance of PI planning in SAFe?
+
+-the best architectures, requirements and designs emerge from self organizing teams
+-simplicity, "the art of maximizing the amount of work not done," is essential
+-the most efficient and effective method of conveying information to and within development team is face-to-face conversation
+-working software is the primary measure of progress |-the best architectures, requirements and designs emerge from self organizing teams;SAFe is based on three bodies of knowledge: agile development, systems thinking, and what type of product development?
+
+-lean product development
+-incremental product development
+-DevOps product development
+-Adaptive product development |-lean product development;which two practices are recommended in SAFe for root cause analysis? (choose 2)
+
+-post PI planning meeting
+-iteration retrescpective
+-5 whys
+-fishbone diagram
+-weighted shortest job first |-iteration retrescpective
+-5 whys;what is the goal of the scrum fo scrums event?
+
+-the review the agile release train's progress towards its PI objectives
+-to review each team's progress on its stories
+-to demo features to product management
+-to focus on agile release train process improvement |-the review the agile release train's progress towards its PI objectives;the goal of lean is to deliver the maximum customer value in the shortest sustainable lead time while providing what else?
+
+-a continuous delivery pipeline
+-improved capacity allocation
+-the highest possible quality
+-significant team contributions |-the highest possible quality;During PI planning who owns feature priorities?
+
+-release train engineer
+-business owner
+-solution architect/engineer
+-product management |-product management;what is one responsibility of a SAFe scrum master?
+
+-prioritizing the work of the systems team
+-maintaining the depth of the architectural runway
+-facilitating an effective team breakout session
+-coordinating with the solution architect and solution management |-facilitating an effective team breakout session;becoming a coach requires a shift from old behaviors to new ones. what are three examples of new coaching behaviors? (choose 3)
+
+-facilitate team problem solving
+-fix problems for the team
+-ask the team for the answer
+-focus on deadlines
+-drive towards specific business outcomes
+-focus on business value delivery |-facilitate team problem solving
+-ask the team for the answer
+-focus on business value delivery;cadence and synchronization help reduce uncertainty and manage what?
+
+-product management
+-capacity allocation
+-other commitments
+-the variability in research and development |-capacity allocation;why is a confidence vote held at the end of PI planning?
+
+-the ensure that business owners accept the plan
+-to hold teams accountable if the agile release train does not deliver on its commitment
+-to build shared commitment to the program plan
+-to remove the risks for the PI |-to build shared commitment to the program plan;what is an IP iteration anti pattern?
+
+-identify infrastructure improvements
+-plan work for the IP iteration during PI planning
+-identify opportunities for innovation spikes or hackathons
+-allow for cadence based planning |-plan work for the IP iteration during PI planning;
