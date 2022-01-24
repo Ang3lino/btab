@@ -1,0 +1,13 @@
+{
+    "_id" : "msan-mx-krb-inr-auditfloorplanr-01",
+    "description" : "Job msan-mx-krb-inr-auditfloorplanr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint}/spark-global-libs-release-local/com/datio/dataproc/kirby/kirby-standalone/${process.version}/kirby-standalone-${process.version}.jar",
+        "configUrl" : "${repository.endpoint}/${repository.repo}/kirby/mx/msan/raw/auditfloorplan/${version}/auditfloorplan.rep.conf",
+        "mainClass" : "com.datio.dataproc.kirby.standalone.KirbyLauncher"
+    },
+    "runtime" : "spark:2.4.3",
+    "size" : "S",
+    "streaming" : false
+}

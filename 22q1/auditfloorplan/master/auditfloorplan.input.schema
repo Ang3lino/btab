@@ -1,0 +1,312 @@
+{
+  "namespace": "msan",
+  "name": "t_klau_audit_floor_plan",
+  "doc": "Informacion de auditoria (ALMER) para control y observacion a Agencias",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/klau/data/t_klau_audit_floor_plan",
+  "partitions": ["cutoff_date"],
+  "objectVersion": "1.0.0",
+  "type": "record",
+  "fields": [{
+    "name": "visit_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agreement_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_dealership_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(100)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "vehicle_agency_brand_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "branch_division_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "branch_division_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "visit_start_date",
+    "type": ["string", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "dd/MM/yyyy",
+    "locale": "mx"
+  }, {
+    "name": "visit_end_date",
+    "type": ["string", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "dd/MM/yyyy",
+    "locale": "mx"
+  }, {
+    "name": "audit_sfctry_score_epse_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agency_score_give_person_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "block_agncy_cr_line_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agency_rating_date",
+    "type": ["string", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "audit_score_hms_date",
+    "type": ["string", "null"],
+    "logicalFormat": "TIME",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "HH:mm"
+  }, {
+    "name": "audit_bncl_financed_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_bncl_financed_veh_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "operation_currency_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_agncy_verif_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_agncy_verif_veh_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "audit_non_verified_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_non_verified_veh_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "audit_agncy_found_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_imperfect_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pend_delivery_paid_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "non_paid_dspsl_sold_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "brand_same_exchange_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "liquidated_vehicles_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agency_arrive_pend_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_missing_vehicles_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agency_rej_audit_visit_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agency_transferred_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "stln_reported_veh_tot_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "agncy_penalty_vehicle_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_non_verified_veh_per",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(15,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "15,10",
+    "locale": "mx"
+  }, {
+    "name": "level1_service_group_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(32)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "purchase_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "settlement_days_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_rgtry_new_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_rgtry_prwd_veh_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cutoff_date",
+    "type": "string",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }]
+}
