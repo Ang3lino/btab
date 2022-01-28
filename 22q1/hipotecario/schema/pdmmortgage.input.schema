@@ -1,0 +1,175 @@
+{
+  "namespace": "msan",
+  "name": "t_klau_pdm_mortgage",
+  "doc": "Informacion que se extrae de la CNBV sobre colocacion de creditos hipotecarios a nivel Nacional para calcular cuota de mercado a niveles Aforo, Mercado, Municipio",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/klau/data/t_klau_pdm_mortgage",
+  "objectVersion": "1.0.0",
+  "type": "record",
+  "fields": [{
+    "name": "mtge_info_orig_source_name",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mgcr_request_register_date",
+    "type": "string",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }, {
+    "name": "entity_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "state_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "branch_division_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mortgage_destination_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(80)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "month_mortgage_cr_total_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "mtge_cr_inst_gen_ctrct_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mejoravit_mtge_prdt_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mtge_credit_comm_network_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "month_mgcr_goal_total_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "mth_mgcr_oper_goal_tot_number",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,1",
+    "locale": "mx"
+  }, {
+    "name": "particular_mgcr_total_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "prtic_mgcr_oper_tot_number",
+    "type": ["string", "null"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mtge_cr_weighted_rate_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "contract_manager_branch_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mortgage_line_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mtge_cr_capacity_range_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mortgage_total_balance_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "DECIMAL(21,10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "21,10",
+    "locale": "mx"
+  }, {
+    "name": "town_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(60)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cutoff_date",
+    "type": "string",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": true,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "mx"
+  }]
+}
