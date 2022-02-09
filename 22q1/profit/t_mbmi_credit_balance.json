@@ -1,0 +1,14 @@
+{
+  "country" : "MX",
+  "environment" : "L",
+  "database" : "MASTERDATA",
+  "name" : "t_mbmi_credit_balance",
+  "type" : "HDFS",
+  "path" : "/data/master/mbmi/data/saldos/t_mbmi_credit_balance",
+  "securityLevel" : "L1",
+  "schemaLocator" : "hdfs:///data/master/mbmi/data/saldos/t_mbmi_credit_balance",
+  "uuaa" : "mbmi",
+  "format" : "PARQUET",
+  "fineGrained" : false,
+  "encrypted" : false
+}
